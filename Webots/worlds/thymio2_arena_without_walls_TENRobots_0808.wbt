@@ -1,0 +1,217 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  basicTimeStep 10
+  randomSeed -1
+  contactProperties [
+    ContactProperties {
+      material2 "thymio body"
+      coulombFriction [
+        0.7
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 1 0 0 4.71238898038469
+  position -3.745887153426091e-15 3.9218001070273 -7.347497810848506e-16
+  follow "thymio2"
+}
+DEF T_master Thymio2 {
+  translation -1.01457 -0.00341855 -0.00325439
+  rotation -0.004852858667351387 0.9999764574813442 0.004851210757725141 1.5705064348231008
+  name "T_master"
+  controller "evolution_multiple"
+  controllerArgs "master"
+  supervisor TRUE
+  window "thymio2"
+  bodySlot [
+    Receiver {
+      channel 1
+    }
+    Emitter {
+      channel 2
+    }
+    Thymio2Pen {
+    }
+  ]
+}
+DEF T1 Thymio2 {
+  translation -0.0463468 -0.00306165 -0.987451
+  rotation 0.9999999999432565 -6.8522016793711005e-06 8.156867566822835e-06 -0.009505040768827413
+  name "T1"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
+DEF Floor Floor {
+  size 0.8 0.8
+  tileSize 1 1
+  appearance CarpetFibers {
+    colorOverride 0.180392 0.203922 0.211765
+  }
+}
+DEF T2 Thymio2 {
+  translation 0.093621 -0.0031567 -1.00832
+  rotation -0.9999999999432564 6.85220168543301e-06 -8.156867565580768e-06 0.009505040768827421
+  name "T2"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T3 Thymio2 {
+  translation 0.237844 -0.00325175 -1.02059
+  rotation 0.9999999999426764 -6.936659408679431e-06 8.156574858304662e-06 -0.009505040768832868
+  name "T3"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T4 Thymio2 {
+  translation 0.247965 -0.00325989 0.99453
+  rotation -3.6458059893055024e-08 0.9999879820671652 0.004902623913539966 3.1415926046622356
+  name "T4"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T5 Thymio2 {
+  translation -0.0415397 -0.00375468 1.04453
+  rotation -3.417432125463439e-08 0.9999879553033569 0.004908079890361891 3.141592597772376
+  name "T5"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T6 Thymio2 {
+  translation 0.0947031 -0.00363764 1.03452
+  rotation -3.519497847144212e-08 0.9999880801103775 0.004882585089879786 3.1415925994351817
+  name "T6"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T7 Thymio2 {
+  translation -0.179711 -0.00344067 1.02456
+  rotation -1.0995764411926838e-07 0.9999887298778749 0.004747643333562257 -3.141591587496444
+  name "T7"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T8 Thymio2 {
+  translation 0.425898 -0.00367008 1.03453
+  rotation -1.6434057765493935e-07 0.9999878655174477 0.004926339191736703 -3.1415909907011526
+  name "T8"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T9 Thymio2 {
+  translation -0.318485 -0.00316918 -0.99453
+  rotation -0.9999999999666198 -1.9952770507560423e-06 -7.92333336379544e-06 0.009529938699048
+  name "T9"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+DEF T10 Thymio2 {
+  translation -0.180129 -0.00368773 -0.994481
+  rotation -0.9999999999752718 -1.1402310707602906e-06 -6.939485771259945e-06 0.011104544997307278
+  name "T10"
+  controller "evolution_multiple"
+  controllerArgs "slave"
+  bodySlot [
+    Receiver {
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+}
+Wall {
+  translation 0 0 -0.52
+  size 1.04 0.015 0.01
+}
+Wall {
+  translation 0 0 0.52
+  name "wall(3)"
+  size 1.04 0.015 0.01
+}
+Wall {
+  translation 0.52 0 0
+  rotation 0 1 0 1.5708
+  name "wall(1)"
+  size 1.04 0.015 0.01
+}
+Wall {
+  translation -0.52 0 0
+  rotation 0 1 0 1.5708
+  name "wall(2)"
+  size 1.04 0.015 0.01
+}
